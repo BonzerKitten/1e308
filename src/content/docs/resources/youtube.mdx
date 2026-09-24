@@ -1,0 +1,50 @@
+---
+title: YouTube channels
+description: Content creators who play incremental and idle games, from dedicated channels to variety streamers.
+sidebar:
+  order: 2
+---
+
+import LanguageFilter from '../../../components/LanguageFilter.astro';
+import ChannelTable from '../../../components/ChannelTable.astro';
+
+Watching someone else play is a quick way to discover new games and to see how players react to them in real time.
+
+## Good places to start
+
+- **[Idle cub](https://www.youtube.com/@idlecub)**: plays incremental and idle games, often new indie releases. [Upgrading my Battlemage to Destroy Hordes of Skeletons!](https://www.youtube.com/watch?v=Os7He0zErJY) is a good place to start.
+- **[Skoottie](https://www.youtube.com/@Skoottie)**: plays incremental games alongside other indie titles.
+- **[Gohjoe](https://www.youtube.com/@Gohjoe)**: gaming videos focused mostly on indie games and roguelites.
+- **[ImCade](https://www.youtube.com/@ImCade)**: plays small indie games, incremental games included.
+
+:::note[About this list]
+Every channel below was checked against its description and video titles to confirm it has played incremental or idle games. Subscriber counts are from September 2026 and will drift over time.
+:::
+
+<LanguageFilter />
+
+## Channels focused on incremental games
+
+These channels are built around the genre: incremental and idle games are what they mostly play, or what they say they play.
+
+<ChannelTable focus="focused" />
+
+## Channels that also play incremental games
+
+Variety and indie channels with at least one incremental game on the channel. Some play the genre often, others only when a game catches their eye.
+
+### Over 1 million subscribers
+
+<ChannelTable focus="variety" minSubscribers={1000000} />
+
+### 100K to 1 million subscribers
+
+<ChannelTable focus="variety" minSubscribers={100000} maxSubscribers={1000000} />
+
+### 10K to 100K subscribers
+
+<ChannelTable focus="variety" minSubscribers={10000} maxSubscribers={100000} />
+
+### Under 10K subscribers
+
+<ChannelTable focus="variety" maxSubscribers={10000} />

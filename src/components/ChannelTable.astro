@@ -1,0 +1,64 @@
+---
+// Table of YouTube channels from src/data/youtube-channels.json, filtered by focus and subscriber range.
+import channels from '../data/youtube-channels.json';
+
+interface Props {
+	focus: 'focused' | 'variety';
+	minSubscribers?: number;
+	maxSubscribers?: number;
+}
+
+const { focus, minSubscribers = 0, maxSubscribers = Infinity } = Astro.props;
+const rows = channels.filter(
+	(channel) => channel.focus === focus && channel.subscribers >= minSubscribers && channel.subscribers < maxSubscribers,
+);
+---
+
+<div data-channel-table>
+	<table>
+		<thead>
+			<tr>
+				<th>Channel</th>
+				<th>Language</th>
+				<th class="number">Subscribers</th>
+			</tr>
+		</thead>
+		<tbody>
+			{
+				rows.map((channel) => (
+					<tr data-language={channel.language}>
+						<td>
+							<a href={`https://www.youtube.com/channel/${channel.id}`}>{channel.name}</a>
+						</td>
+						<td>
+							{channel.language}
+							{channel.noCommentary && <span class="tag">no commentary</span>}
+						</td>
+						<td class="number">{channel.subscribersLabel}</td>
+					</tr>
+				))
+			}
+		</tbody>
+	</table>
+	<p data-empty hidden>No channels in this language here.</p>
+</div>
+
+<style>
+	.number {
+		text-align: end;
+		white-space: nowrap;
+	}
+	.tag {
+		display: inline-block;
+		margin-inline-start: 0.4rem;
+		padding: 0 0.4rem;
+		border-radius: 0.25rem;
+		font-size: var(--sl-text-xs);
+		background: var(--sl-color-gray-6);
+		color: var(--sl-color-gray-2);
+	}
+	[data-empty] {
+		color: var(--sl-color-gray-3);
+		font-style: italic;
+	}
+</style>

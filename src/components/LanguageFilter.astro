@@ -1,0 +1,63 @@
+---
+// Dropdown that filters every ChannelTable on the page by language.
+import channels from '../data/youtube-channels.json';
+
+const counts = new Map<string, number>();
+for (const channel of channels) counts.set(channel.language, (counts.get(channel.language) ?? 0) + 1);
+const languages = [...counts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]));
+---
+
+<div class="language-filter not-content">
+	<label for="language-filter">Show channels in</label>
+	<select id="language-filter">
+		<option value="">All languages ({channels.length})</option>
+		{languages.map(([language, count]) => <option value={language}>{language} ({count})</option>)}
+	</select>
+</div>
+
+<script>
+	const select = document.querySelector<HTMLSelectElement>('#language-filter');
+
+	function applyFilter() {
+		const language = select?.value ?? '';
+		for (const block of document.querySelectorAll<HTMLElement>('[data-channel-table]')) {
+			let visible = 0;
+			for (const row of block.querySelectorAll<HTMLTableRowElement>('tbody tr')) {
+				row.hidden = language !== '' && row.dataset.language !== language;
+				if (!row.hidden) visible++;
+			}
+			block.querySelector('table')!.hidden = visible === 0;
+			block.querySelector<HTMLElement>('[data-empty]')!.hidden = visible !== 0;
+		}
+	}
+
+	select?.addEventListener('change', applyFilter);
+	applyFilter();
+</script>
+
+<style>
+	.language-filter {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 0.5rem 0.75rem;
+		margin-block: 1.5rem;
+		padding: 0.75rem 1rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.5rem;
+		background: var(--sl-color-gray-6);
+	}
+	label {
+		font-weight: 600;
+		color: var(--sl-color-white);
+	}
+	select {
+		font: inherit;
+		padding: 0.35rem 0.5rem;
+		border: 1px solid var(--sl-color-gray-4);
+		border-radius: 0.25rem;
+		background: var(--sl-color-black);
+		color: var(--sl-color-white);
+		max-width: 100%;
+	}
+</style>
