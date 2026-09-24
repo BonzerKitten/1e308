@@ -1,0 +1,25 @@
+---
+// List of games from src/data/games.json for one theme, each with its Steam bundle count.
+import { Badge } from '@astrojs/starlight/components';
+import data from '../data/games.json';
+import { bundleLabel, bundleVariant, steamUrl } from './bundles';
+
+interface Props {
+	theme: string;
+}
+
+const games = data.games.filter((game) => game.theme === Astro.props.theme);
+---
+
+<ul>
+	{
+		games.map((game) => (
+			<li>
+				<strong>
+					<a href={steamUrl(game.appId)}>{game.name}</a>
+				</strong>{' '}
+				<Badge text={bundleLabel(game.bundles)} variant={bundleVariant(game.bundles)} size="small" />: {game.description}
+			</li>
+		))
+	}
+</ul>

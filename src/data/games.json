@@ -1,0 +1,72 @@
+{
+	"bundlesCheckedOn": "September 2026",
+	"themes": [
+		{ "id": "mining", "title": "Mining and digging" },
+		{ "id": "gathering", "title": "Gathering, chopping and fishing" },
+		{ "id": "luck", "title": "Luck and gambling" },
+		{ "id": "physics", "title": "Physics and chain reactions" },
+		{ "id": "action", "title": "Action and bullet hell" },
+		{ "id": "heroes", "title": "Heroes, dungeons and defense" },
+		{ "id": "space", "title": "Space and beyond" },
+		{ "id": "building", "title": "Building and managing" }
+	],
+	"games": [
+		{ "name": "Diggin", "appId": 4157430, "theme": "mining", "bundles": 42, "description": "Drill into a meteor crater, mine ores and unlock upgrades while uncovering what happened to the moles that came before you." },
+		{ "name": "Dwarf Eats Mountain", "appId": 4078200, "theme": "mining", "bundles": 7, "description": "A whimsical game about gold-hungry dwarves chewing through ever-bigger mountains, digging up riches and artifacts along the way." },
+		{ "name": "Fracture Field", "appId": 3946110, "theme": "mining", "bundles": 45, "description": "Shatter quarry rocks with timed swings, then automate the work with fleets of drones, bombs and prestige upgrades." },
+		{ "name": "Mining Wizards", "appId": 4205900, "theme": "mining", "bundles": 16, "description": "Mine minerals as a wizard, grow a huge skill tree, unlock talents and collect artifacts that attract special visitors." },
+		{ "name": "Rock Crusher", "appId": 3456800, "theme": "mining", "bundles": 67, "description": "A minimalist game about a small rock-crushing machine stranded on a strange planet, with a massive skill tree between you and escape." },
+		{ "name": "Shelldiver", "appId": 3862670, "theme": "mining", "bundles": 25, "description": "A cozy game about a senior turtle starting a business selling jellyfish, upgrading diving gear and exploring underwater biomes." },
+		{ "name": "Space Rock Breaker", "appId": 4035270, "theme": "mining", "bundles": 69, "description": "Mine asteroids with guns, process the ore by dropping it into a Plinko machine, and work through a massive skill tree." },
+		{ "name": "You Know The Drill", "appId": 3833760, "theme": "mining", "bundles": 42, "description": "A relaxing, retro-styled game about drilling ever deeper underground and harvesting ores to upgrade your drill." },
+
+		{ "name": "Chop Chains", "appId": 4139720, "theme": "gathering", "bundles": 28, "description": "A relaxing pixel-art game about chopping trees and upgrading axes and skills to become the ultimate lumberjack." },
+		{ "name": "It's Chopping Time!", "appId": 4272270, "theme": "gathering", "bundles": 19, "description": "Clear an island's forests with the forces of nature, from earthquakes and tornadoes to tidal waves, seen from an isometric view." },
+		{ "name": "Fishing Inc", "appId": 4126480, "theme": "gathering", "bundles": 34, "description": "A cozy, colorful fishing game: catch fish, unlock skills, master new ponds and fill your fish log with legendary catches." },
+		{ "name": "Auto Snakes in Outer Space", "appId": 4122810, "theme": "gathering", "bundles": 5, "description": "A slow, meditative idler where colorful snakes gather food that you spend on upgrades and abilities for their colony." },
+
+		{ "name": "Gamblers Table", "appId": 3618390, "theme": "luck", "bundles": 30, "description": "A minimalist, cute game about flipping coins for money, buying better coins and hiring little helpers to flip them for you." },
+		{ "name": "Scritchy Scratchy", "appId": 3948120, "theme": "luck", "bundles": 12, "description": "Buy stacks of scratch cards, unlock auto-scratching and chase huge jackpots, deciding when to play it safe and when to go all in." },
+		{ "name": "Slot Grind", "appId": 4619420, "theme": "luck", "bundles": 3, "description": "Spin slot machines, reinvest your winnings into better machines and automation, and work your way out of debt." },
+		{ "name": "Slots & Diapers", "appId": 4409870, "theme": "luck", "bundles": 39, "description": "An absurd pixel-art game about spinning for jackpots and hiring veteran gamblers to automate the madness." },
+		{ "name": "Bills Must Be Paid", "appId": 4421010, "theme": "luck", "bundles": 16, "description": "A short, active game about smashing piggy banks to pay your bills and finally get out of debt." },
+
+		{ "name": "Idle Gumball Machine", "appId": 3724490, "theme": "physics", "bundles": 32, "description": "A Plinko-style game: shoot gumballs at gears and stack upgrades until the numbers get big enough to break the game." },
+		{ "name": "Pegfinity", "appId": 3947040, "theme": "physics", "bundles": 21, "description": "A colorful pixel-art pachinko game about launching balls into pegs and chaining upgrades into ridiculous scores." },
+		{ "name": "Get Rid Of Those Corners", "appId": 4550150, "theme": "physics", "bundles": 2, "description": "A minimalist, geometric game about clearing the sides of shapes to trigger physical chain reactions, with over 130 upgrades." },
+		{ "name": "Click and Conquer", "appId": 3267900, "theme": "physics", "bundles": 27, "description": "A short, relaxing pixel-art game about dropping bombs through the fog of war to uncover hidden enemies and new maps." },
+
+		{ "name": "Astro Prospector", "appId": 3503440, "theme": "action", "bundles": 31, "description": "An incremental bullet hell about mining coffee in space, fighting a mega-corporation and upgrading your ship." },
+		{ "name": "Minutescape", "appId": 3327170, "theme": "action", "bundles": 22, "description": "A retro-inspired bullet hell where you dodge, upgrade and keep unlocking abilities until you can survive five straight minutes." },
+		{ "name": "Void Miner", "appId": 3772240, "theme": "action", "bundles": 173, "description": "A retro-inspired asteroid shooter: pilot a ship alongside an automated tower and blast your way through endless asteroid fields." },
+		{ "name": "Rocket Rats", "appId": 3069810, "theme": "action", "bundles": 3, "description": "A pixel-art survivors-like where you fight cheese-based astral bodies in space, as a rat." },
+		{ "name": "IGNOBLE", "appId": 4216180, "theme": "action", "bundles": 36, "description": "A gory 2D beat 'em up where you feed your father the blood and bones of your enemies to grow stronger." },
+
+		{ "name": "IncreKnight", "appId": 4305480, "theme": "heroes", "bundles": 18, "description": "A pixel-art adventure about growing strong enough to slay a dragon." },
+		{ "name": "Increbraintal", "appId": 3863830, "theme": "heroes", "bundles": 4, "description": "An auto battler about protecting a brain from viruses, with a skill tree at its core." },
+		{ "name": "Loot Loop", "appId": 3972320, "theme": "heroes", "bundles": 33, "description": "Build a party of heroes and send them on quick dungeon runs for loot, upgrades and a deep skill tree." },
+		{ "name": "Maktala: Slime Lootfest", "appId": 4005560, "theme": "heroes", "bundles": 37, "description": "Fight hordes of slimes and use their loot to grow stronger, with plenty of skills and gear to master." },
+		{ "name": "Outhold", "appId": 3767740, "theme": "heroes", "bundles": 22, "description": "A short, minimalist mix of tower defense and deep meta-progression, built around finding overpowered synergies." },
+		{ "name": "Sir, We Have an Orc Problem", "appId": 4594150, "theme": "heroes", "bundles": 8, "description": "A tower defense game where overwhelming hordes of orcs meet even more bullets, bombs and lasers." },
+		{ "name": "Zero Stress King: Idle Defense", "appId": 4271160, "theme": "heroes", "bundles": 66, "description": "A short, relaxing pixel-art game dressed up as tower defense, except the enemies can never reach your walls." },
+		{ "name": "Slimeward", "appId": 3913270, "theme": "heroes", "bundles": 5, "description": "Build and upgrade a side-scrolling village and recruit heroes to fight off the slimes at your door." },
+		{ "name": "Horripilant", "appId": 3525970, "theme": "heroes", "bundles": 34, "description": "An idle dungeon crawl through a dark, forgotten underworld, told in pixel art." },
+		{ "name": "Chef Knight", "appId": 4304930, "theme": "heroes", "bundles": 23, "description": "A cozy, hand-drawn fantasy game about hunting monsters in dungeons, cooking them and serving the dishes to hungry adventurers." },
+		{ "name": "Holding Pattern", "appId": 4309180, "theme": "heroes", "bundles": 2, "description": "A minimalist game about defending your galaxy with moons and abilities, with both incremental and roguelike modes." },
+
+		{ "name": "A Game About Feeding A Black Hole", "appId": 3694480, "theme": "space", "bundles": 54, "description": "Feed a black hole by destroying asteroids, planets and stars." },
+		{ "name": "A Game About Making A Planet", "appId": 4314260, "theme": "space", "bundles": 32, "description": "A short, slow-paced game about merging particles until they become a planet. It takes about one to two hours." },
+		{ "name": "Starvester", "appId": 4194800, "theme": "space", "bundles": 19, "description": "Expand a factory across a star system with swarms of drones and build giant megastructures." },
+		{ "name": "Sporbs", "appId": 4241840, "theme": "space", "bundles": 39, "description": "Pop alien organisms like space bubble wrap, then automate a factory and expand into new areas." },
+
+		{ "name": "Tower Wizard", "appId": 3372980, "theme": "building", "bundles": 4, "description": "A colorful pixel-art game about helping a wizard build a tower to study magic, summon spirits and shape the world." },
+		{ "name": "(the) Gnorp Apologue", "appId": 1473350, "theme": "building", "bundles": 5, "description": "Guide the cute little gnorps toward their goal of delightfully excessive wealth." },
+		{ "name": "Cult Nation", "appId": 3897540, "theme": "building", "bundles": 23, "description": "A short game about sacrificing your cult's followers and collecting their blood to awaken the devil." },
+		{ "name": "Fill Up The Hole", "appId": 3343160, "theme": "building", "bundles": 1, "description": "Build a city in a dystopian world, automate garbage production and throw it all into a magical hole for profit." },
+		{ "name": "Garbage Growth", "appId": 4680930, "theme": "building", "bundles": 3, "description": "A short, darkly silly game about collecting trash, hiring rats and polluting the world for profit." },
+		{ "name": "Simultree", "appId": 3811840, "theme": "building", "bundles": 16, "description": "Run life simulations as a scientist and spend the points they earn in a big skill tree." },
+		{ "name": "IDLE_DIRECTIVE", "appId": 4599710, "theme": "building", "bundles": 1, "description": "A grid-based inventory and resource game about scavenging ruins and meeting survivors in a decaying world." },
+		{ "name": "The Board is Yours", "appId": 4238740, "theme": "building", "bundles": 10, "description": "A demanding, chess-based idle game about buying squares, placing pieces and chaining synergies." },
+		{ "name": "All Hail the Orb", "appId": 4262310, "theme": "building", "bundles": 67, "description": "A light-hearted pixel-art game about powering a mysterious orb, summoning cultists and slowly unlocking automation." }
+	]
+}

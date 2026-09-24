@@ -1,0 +1,34 @@
+---
+// Every game from src/data/games.json, sorted by how many Steam bundles it's in.
+import { Badge } from '@astrojs/starlight/components';
+import data from '../data/games.json';
+import { bundleLabel, bundleVariant, steamUrl } from './bundles';
+
+const themeTitle = Object.fromEntries(data.themes.map((theme) => [theme.id, theme.title]));
+const games = [...data.games].sort((a, b) => b.bundles - a.bundles || a.name.localeCompare(b.name));
+---
+
+<table>
+	<thead>
+		<tr>
+			<th>Game</th>
+			<th>Bundles</th>
+			<th>Theme</th>
+		</tr>
+	</thead>
+	<tbody>
+		{
+			games.map((game) => (
+				<tr>
+					<td>
+						<a href={steamUrl(game.appId)}>{game.name}</a>
+					</td>
+					<td>
+						<Badge text={bundleLabel(game.bundles)} variant={bundleVariant(game.bundles)} size="small" />
+					</td>
+					<td>{themeTitle[game.theme]}</td>
+				</tr>
+			))
+		}
+	</tbody>
+</table>

@@ -1,0 +1,60 @@
+---
+title: Games to play
+description: Incremental games on Steam worth playing, with how many bundles each one is part of.
+sidebar:
+  order: 1
+---
+
+import { Badge } from '@astrojs/starlight/components';
+import GameList from '../../../components/GameList.astro';
+import BundleTable from '../../../components/BundleTable.astro';
+
+Playing is the best way to understand the genre. Many of these are short games that take a few hours to finish, which makes them a great way to see a complete progression curve from start to end.
+
+## About the bundle counts
+
+Every game shows how many Steam bundles it's part of. A bundle is a set of games sold together at a discount, usually put together by the developers themselves.
+
+If you're a developer looking for games to bundle with yours, the count is a good hint of how open each team is to the idea:
+
+- <Badge text="30+ bundles" variant="success" size="small" /> clearly open to bundling
+- <Badge text="10 to 29 bundles" variant="caution" size="small" /> open to it
+- <Badge text="Under 10 bundles" size="small" /> more selective, or just getting started
+
+Counts were checked in September 2026 and change over time. The full list, sorted by bundle count, is at the [bottom of the page](#all-games-by-bundle-count).
+
+## Mining and digging
+
+<GameList theme="mining" />
+
+## Gathering, chopping and fishing
+
+<GameList theme="gathering" />
+
+## Luck and gambling
+
+<GameList theme="luck" />
+
+## Physics and chain reactions
+
+<GameList theme="physics" />
+
+## Action and bullet hell
+
+<GameList theme="action" />
+
+## Heroes, dungeons and defense
+
+<GameList theme="heroes" />
+
+## Space and beyond
+
+<GameList theme="space" />
+
+## Building and managing
+
+<GameList theme="building" />
+
+## All games by bundle count
+
+<BundleTable />
