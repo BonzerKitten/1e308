@@ -9,18 +9,20 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: '1e308',
+			description: 'Notes, resources and tips for anyone who makes or plays incremental games.',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/BonzerKitten/1e308' }],
 			sidebar: [
 				{
-					label: 'Guides',
-					items: [
-						// Each item here is one entry in the navigation menu.
-						{ label: 'Example Guide', slug: 'guides/example' },
-					],
+					label: 'Design',
+					items: [{ autogenerate: { directory: 'design' } }],
 				},
 				{
-					label: 'Reference',
-					items: [{ autogenerate: { directory: 'reference' } }],
+					label: 'Development',
+					items: [{ autogenerate: { directory: 'development' } }],
+				},
+				{
+					label: 'Resources',
+					items: [{ autogenerate: { directory: 'resources' } }],
 				},
 			],
 		}),

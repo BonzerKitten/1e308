@@ -1,40 +1,51 @@
 ---
-title: Welcome to Starlight
-description: Get started building your docs site with Starlight.
-template: splash # Remove or comment out this line to display the site sidebar on this page.
+title: '1e308'
+description: Notes, resources and tips for anyone who makes or plays incremental games.
+template: splash
 hero:
-  tagline: Congrats on setting up a new Starlight project!
-  image:
-    file: ../../assets/houston.webp
+  tagline: Notes, resources and tips for anyone who makes or plays incremental games.
   actions:
-    - text: Example Guide
-      link: /1e308/guides/example/
+    - text: Start with design
+      link: /1e308/design/progression/
       icon: right-arrow
-    - text: Read the Starlight docs
-      link: https://starlight.astro.build
-      icon: external
+    - text: Find games to play
+      link: /1e308/resources/games/
       variant: minimal
 ---
 
-import { Card, CardGrid } from '@astrojs/starlight/components';
+import { CardGrid, LinkCard } from '@astrojs/starlight/components';
 
-## Next steps
+## Welcome
 
-<CardGrid stagger>
-	<Card title="Update content" icon="pencil">
-		Edit `src/content/docs/index.mdx` to see this page change.
-	</Card>
-	<Card title="Change page layout" icon="document">
-		Delete `template: splash` in `src/content/docs/index.mdx` to display a
-		sidebar on this page.
-	</Card>
-	<Card title="Add new content" icon="add-document">
-		Add Markdown or MDX files to `src/content/docs` to create new pages.
-	</Card>
-	<Card title="Configure your site" icon="setting">
-		Edit your `sidebar` and other config in `astro.config.mjs`.
-	</Card>
-	<Card title="Read the docs" icon="open-book">
-		Learn more in [the Starlight Docs](https://starlight.astro.build/).
-	</Card>
+Incremental games are built on a simple loop: earn something, spend it on upgrades, and earn more of it faster. Simple to describe, surprisingly hard to get right.
+
+This site collects what I've learned about the genre while making my own games: what players expect, what makes these games feel good, and where to look for more. It's a work in progress, and it grows as I learn.
+
+## Explore
+
+<CardGrid>
+	<LinkCard
+		title="Design"
+		description="Progression, engagement and game feel: the ideas that keep players clicking."
+		href="/1e308/design/progression/"
+	/>
+	<LinkCard
+		title="Tips for developers"
+		description="Choosing what to make, planning production and preparing for launch."
+		href="/1e308/development/tips/"
+	/>
+	<LinkCard
+		title="Handling big numbers"
+		description="What to do when your numbers outgrow what the computer can store."
+		href="/1e308/development/big-numbers/"
+	/>
+	<LinkCard
+		title="Resources"
+		description="Games worth playing and YouTube channels that cover the genre."
+		href="/1e308/resources/games/"
+	/>
 </CardGrid>
+
+## Why "1e308"?
+
+In JavaScript, and in most languages that store numbers as 64-bit floating point, a regular number can't go much beyond 1.8 × 10<sup>308</sup>, written as `1e308`. Incremental games reach that ceiling more often than you'd think, and getting past it is part of the fun. The [big numbers](/1e308/development/big-numbers/) page explains how.
