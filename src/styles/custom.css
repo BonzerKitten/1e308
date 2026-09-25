@@ -1,3 +1,81 @@
+/* Warm greys and cream, with a soft coral accent for links and highlights. */
+
+:root {
+	--sl-color-white: #faf9f5;
+	--sl-color-gray-1: #e8e6dc;
+	--sl-color-gray-2: #c2c0b6;
+	--sl-color-gray-3: #9c9a92;
+	--sl-color-gray-4: #6b6a63;
+	--sl-color-gray-5: #3d3d3a;
+	--sl-color-gray-6: #262624;
+	--sl-color-black: #141413;
+
+	--sl-color-accent-low: #3f2a20;
+	--sl-color-accent: #d97757;
+	--sl-color-accent-high: #e9a58a;
+	--sl-color-text-invert: #141413;
+
+	--sl-color-bg-nav: #1a1918;
+	--sl-color-bg-sidebar: #1a1918;
+	--sl-color-hairline-shade: #262624;
+
+	/* Default badges are neutral so coral stays reserved for links and highlights */
+	--sl-badge-default-border: var(--sl-color-gray-4);
+	--sl-badge-default-bg: var(--sl-color-gray-6);
+	--sl-badge-default-text: var(--sl-color-white);
+}
+
+/* Dark mode callout and badge colours, softened to sit with the warm greys. Light mode keeps Starlight's. */
+:root:not([data-theme='light']) {
+	--sl-color-green-low: #2a3322;
+	--sl-color-green: #9cbf7a;
+	--sl-color-green-high: #cfe3bc;
+	--sl-color-orange-low: #3d3020;
+	--sl-color-orange: #ddb068;
+	--sl-color-orange-high: #f0d6a8;
+	--sl-color-blue-low: #25303d;
+	--sl-color-blue: #7fa3c9;
+	--sl-color-blue-high: #c3d6ea;
+	--sl-color-purple-low: #332a3d;
+	--sl-color-purple: #a98bc8;
+	--sl-color-purple-high: #d9cbe8;
+	--sl-color-red-low: #3d2226;
+	--sl-color-red: #d27a82;
+	--sl-color-red-high: #efc3c7;
+}
+
+:root[data-theme='light'] {
+	--sl-color-white: #141413;
+	--sl-color-gray-1: #262624;
+	--sl-color-gray-2: #3d3d3a;
+	--sl-color-gray-3: #5e5d59;
+	--sl-color-gray-4: #87867f;
+	--sl-color-gray-5: #d1cfc5;
+	--sl-color-gray-6: #f0eee6;
+	--sl-color-gray-7: #f5f4ee;
+	--sl-color-black: #faf9f5;
+
+	--sl-color-accent-low: #f5ddd2;
+	--sl-color-accent: #b0532f;
+	--sl-color-accent-high: #8f4128;
+	--sl-color-text-invert: #faf9f5;
+
+	--sl-color-bg-nav: #f5f4ee;
+	--sl-color-bg-sidebar: #f5f4ee;
+	--sl-color-hairline-shade: var(--sl-color-gray-5);
+
+	/* Softer badge fills */
+	--sl-color-green-high: #4a6b35;
+	--sl-color-orange-high: #7a5520;
+}
+
+/* Tip callouts use the coral accent */
+.starlight-aside--tip {
+	--sl-color-asides-text-accent: var(--sl-color-accent-high);
+	--sl-color-asides-border: var(--sl-color-accent);
+	background-color: var(--sl-color-accent-low);
+}
+
 /* Square corners everywhere */
 *,
 *::before,
