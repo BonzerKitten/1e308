@@ -13,6 +13,11 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/BonzerKitten/1e308' }],
 			// Show each page's last commit date so readers can tell how fresh lists like bundle counts are.
 			lastUpdated: true,
+			customCss: ['./src/styles/steam.css'],
+			components: {
+				ThemeProvider: './src/components/ThemeProvider.astro',
+				ThemeSelect: './src/components/ThemeSelect.astro',
+			},
 			sidebar: [
 				{
 					label: 'Design',

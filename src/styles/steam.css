@@ -1,0 +1,100 @@
+/*
+ * Classic Steam (2003–2010) look: olive panels, gold highlights, bevelled buttons and square corners.
+ * Base colours were sampled from screenshots of the old Steam client.
+ * Muted text is slightly lighter than the original so small text stays readable.
+ */
+
+:root {
+	--steam-olive: #4c5844; /* window background */
+	--steam-olive-dark: #3e4637; /* text fields and list panels */
+	--steam-bevel-light: #808080; /* top and left edge of raised controls */
+	--steam-bevel-dark: #282e22; /* bottom and right edge of raised controls */
+	--steam-gold: #c4b550; /* highlighted labels and checkmarks */
+	--steam-gold-dim: #958831;
+
+	/* Starlight greys, from brightest to darkest */
+	--sl-color-white: #ffffff;
+	--sl-color-gray-1: #eef1ea;
+	--sl-color-gray-2: #d8ded3;
+	--sl-color-gray-3: #b0b9a5;
+	--sl-color-gray-4: #87907f;
+	--sl-color-gray-5: #5e6a55;
+	--sl-color-gray-6: var(--steam-olive);
+	--sl-color-black: var(--steam-olive-dark);
+
+	--sl-color-accent-low: #4a4a26;
+	--sl-color-accent: var(--steam-gold-dim);
+	--sl-color-accent-high: var(--steam-gold);
+	--sl-color-text-accent: var(--steam-gold);
+	--sl-color-text-invert: var(--steam-bevel-dark);
+
+	/* Page content sits on the darker panel colour; header and sidebar use the main olive */
+	--sl-color-bg: var(--steam-olive-dark);
+	--sl-color-bg-nav: var(--steam-olive);
+	--sl-color-bg-sidebar: var(--steam-olive);
+	--sl-color-hairline: var(--steam-bevel-dark);
+	--sl-color-hairline-shade: var(--steam-bevel-dark);
+	--sl-color-hairline-light: var(--sl-color-gray-5);
+	--sl-color-backdrop-overlay: rgb(40 46 34 / 0.7);
+
+	/* Callout and badge colours, muted to sit on olive */
+	--sl-color-green-low: #34422a;
+	--sl-color-green: #8fbf4d;
+	--sl-color-green-high: #c2de9a;
+	--sl-color-orange-low: #4a3c22;
+	--sl-color-orange: #d9a441;
+	--sl-color-orange-high: #edcf95;
+	--sl-color-purple-low: #3c3448;
+	--sl-color-purple: #a98bc8;
+	--sl-color-purple-high: #d6c6ea;
+	--sl-color-blue-low: #2e3c48;
+	--sl-color-blue: #7fa8c9;
+	--sl-color-blue-high: #c2d8ea;
+	--sl-color-red-low: #48292a;
+	--sl-color-red: #c9665e;
+	--sl-color-red-high: #edbdb8;
+}
+
+/* No rounded corners anywhere */
+*,
+*::before,
+*::after {
+	border-radius: 0 !important;
+}
+
+/* Sidebar group headings in gold, like "MY GAMES" in the old games list */
+.sidebar-content .group-label .large {
+	color: var(--steam-gold);
+}
+
+/* Raised, bevelled buttons */
+.sl-link-button:is(.primary, .secondary),
+.pagination-links a {
+	border: 1px solid;
+	border-color: var(--steam-bevel-light) var(--steam-bevel-dark) var(--steam-bevel-dark) var(--steam-bevel-light);
+	background: var(--steam-olive);
+	color: var(--sl-color-white);
+	box-shadow: none;
+}
+.sl-link-button:is(.primary, .secondary):hover,
+.pagination-links a:hover {
+	border-color: var(--steam-bevel-light) var(--steam-bevel-dark) var(--steam-bevel-dark) var(--steam-bevel-light);
+	color: var(--steam-gold);
+}
+.sl-link-button:is(.primary, .secondary):active,
+.pagination-links a:active {
+	border-color: var(--steam-bevel-dark) var(--steam-bevel-light) var(--steam-bevel-light) var(--steam-bevel-dark);
+}
+
+/* Search box looks like a Steam text field */
+button[data-open-modal] {
+	border-color: var(--steam-bevel-dark);
+	background-color: var(--steam-olive-dark);
+}
+
+/* Tip callouts in gold instead of purple */
+.starlight-aside--tip {
+	--sl-color-asides-text-accent: var(--steam-gold);
+	--sl-color-asides-border: var(--steam-gold-dim);
+	background-color: var(--sl-color-accent-low);
+}
