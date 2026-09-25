@@ -2,6 +2,7 @@
 title: Progression
 description: Skill trees, prestige systems, and why players shouldn't need every upgrade to finish.
 sidebar:
+  label: '📈 Progression'
   order: 1
 ---
 

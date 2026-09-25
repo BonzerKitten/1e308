@@ -2,6 +2,7 @@
 title: Art style inspiration
 description: Videos showing how a strong, simple visual style can carry an incremental game.
 sidebar:
+  label: '🎨 Art style inspiration'
   order: 3
 ---
 

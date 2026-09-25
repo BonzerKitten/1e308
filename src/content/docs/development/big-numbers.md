@@ -2,6 +2,7 @@
 title: Handling big numbers
 description: Why regular numbers stop at about 1e308, and the libraries incremental games use to go further.
 sidebar:
+  label: '🔢 Handling big numbers'
   order: 2
 ---
 

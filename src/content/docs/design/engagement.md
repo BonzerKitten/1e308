@@ -2,6 +2,7 @@
 title: Engagement
 description: How a touch of luck and a little lore keep a repetitive loop interesting.
 sidebar:
+  label: '🎲 Engagement'
   order: 2
 ---
 

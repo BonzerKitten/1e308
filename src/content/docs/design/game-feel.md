@@ -2,6 +2,7 @@
 title: Game feel
 description: Small details that make collecting resources satisfying, from coin counts to sound design.
 sidebar:
+  label: '✨ Game feel'
   order: 3
 ---
 

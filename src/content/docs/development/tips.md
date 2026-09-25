@@ -2,6 +2,7 @@
 title: Tips for developers
 description: Lessons on choosing what to make, planning production and launching on Steam.
 sidebar:
+  label: '💡 Tips for developers'
   order: 1
 ---
 

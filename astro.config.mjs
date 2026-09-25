@@ -11,6 +11,8 @@ export default defineConfig({
 			title: '1e308',
 			description: 'Notes, resources and tips for anyone who makes or plays incremental games.',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/BonzerKitten/1e308' }],
+			// Show each page's last commit date so readers can tell how fresh lists like bundle counts are.
+			lastUpdated: true,
 			sidebar: [
 				{
 					label: 'Design',
