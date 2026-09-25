@@ -1,9 +1,0 @@
----
-// Replaces Starlight's theme provider: the classic Steam palette has only one theme, so the site is always dark.
----
-
-{/* Inlined so the theme is set before the page paints. */}
-<script is:inline>
-	document.documentElement.dataset.theme = 'dark';
-	window.StarlightThemeProvider = { updatePickers() {} };
-</script>

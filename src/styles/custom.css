@@ -1,0 +1,6 @@
+/* Square corners everywhere */
+*,
+*::before,
+*::after {
+	border-radius: 0 !important;
+}
