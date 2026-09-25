@@ -13,7 +13,7 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/BonzerKitten/1e308' }],
 			// Show each page's last commit date so readers can tell how fresh lists like bundle counts are.
 			lastUpdated: true,
-			customCss: ['./src/styles/custom.css'],
+			customCss: ['@fontsource-variable/source-serif-4/opsz.css', './src/styles/custom.css'],
 			sidebar: [
 				{
 					label: 'Design',

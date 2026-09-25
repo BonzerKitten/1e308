@@ -1,18 +1,25 @@
-/* Warm greys and cream, with an orange accent for links and highlights. */
+/*
+ * Warm greys and ivory with a clay-orange accent, inspired by Anthropic's palette.
+ * Hex values come from Anthropic's published colours. Where the palette has no shade
+ * that's readable as text (dark tints, light-mode link colour), the shade is mixed from
+ * the brand colour and #141413 until it meets WCAG AA contrast.
+ */
 
 :root {
+	--font-serif: 'Source Serif 4 Variable', Georgia, serif;
+
 	--sl-color-white: #faf9f5;
 	--sl-color-gray-1: #e8e6dc;
 	--sl-color-gray-2: #c2c0b6;
 	--sl-color-gray-3: #9c9a92;
-	--sl-color-gray-4: #6b6a63;
+	--sl-color-gray-4: #73726c;
 	--sl-color-gray-5: #3d3d3a;
 	--sl-color-gray-6: #262624;
 	--sl-color-black: #141413;
 
-	--sl-color-accent-low: #432818;
-	--sl-color-accent: #e17547;
-	--sl-color-accent-high: #eb8f60;
+	--sl-color-accent-low: #34241e;
+	--sl-color-accent: #c6613f;
+	--sl-color-accent-high: #d97757;
 	--sl-color-text-invert: #141413;
 
 	--sl-color-bg-nav: #1a1918;
@@ -25,23 +32,23 @@
 	--sl-badge-default-text: var(--sl-color-white);
 }
 
-/* Dark mode callout and badge colours, softened to sit with the warm greys. Light mode keeps Starlight's. */
+/* Dark mode callout and badge colours: brand colour, a dark tint behind it, and the brand's pale shade for text */
 :root:not([data-theme='light']) {
-	--sl-color-green-low: #2a3322;
-	--sl-color-green: #9cbf7a;
-	--sl-color-green-high: #cfe3bc;
-	--sl-color-orange-low: #3d3020;
-	--sl-color-orange: #ddb068;
-	--sl-color-orange-high: #f0d6a8;
-	--sl-color-blue-low: #25303d;
-	--sl-color-blue: #7fa3c9;
-	--sl-color-blue-high: #c3d6ea;
-	--sl-color-purple-low: #332a3d;
-	--sl-color-purple: #a98bc8;
-	--sl-color-purple-high: #d9cbe8;
-	--sl-color-red-low: #3d2226;
-	--sl-color-red: #d27a82;
-	--sl-color-red-high: #efc3c7;
+	--sl-color-green-low: #2a2e23;
+	--sl-color-green: #788c5d;
+	--sl-color-green-high: #ced6bf;
+	--sl-color-orange-low: #443521;
+	--sl-color-orange: #f0ac54;
+	--sl-color-orange-high: #ebdbbc;
+	--sl-color-blue-low: #27323c;
+	--sl-color-blue: #6a9bcc;
+	--sl-color-blue-high: #c5d3e0;
+	--sl-color-purple-low: #2c2b38;
+	--sl-color-purple: #827dbd;
+	--sl-color-purple-high: #cbcadb;
+	--sl-color-red-low: #402524;
+	--sl-color-red: #de6262;
+	--sl-color-red-high: #ebcece;
 }
 
 :root[data-theme='light'] {
@@ -52,21 +59,44 @@
 	--sl-color-gray-4: #87867f;
 	--sl-color-gray-5: #d1cfc5;
 	--sl-color-gray-6: #f0eee6;
-	--sl-color-gray-7: #f5f4ee;
+	--sl-color-gray-7: #f5f4ed;
 	--sl-color-black: #faf9f5;
 
-	--sl-color-accent-low: #f8dccb;
-	--sl-color-accent: #af4e1d;
-	--sl-color-accent-high: #8c3d14;
+	--sl-color-accent-low: #ebc9b7;
+	--sl-color-accent: #ab5538;
+	--sl-color-accent-high: #7f422d;
 	--sl-color-text-invert: #faf9f5;
 
-	--sl-color-bg-nav: #f5f4ee;
-	--sl-color-bg-sidebar: #f5f4ee;
+	--sl-color-bg-nav: #f5f4ed;
+	--sl-color-bg-sidebar: #f5f4ed;
 	--sl-color-hairline-shade: var(--sl-color-gray-5);
 
-	/* Softer badge fills */
-	--sl-color-green-high: #4a6b35;
-	--sl-color-orange-high: #7a5520;
+	/* Light mode: the brand's pale shade behind, the brand colour, and a dark shade for text */
+	--sl-color-green-low: #ced6bf;
+	--sl-color-green: #788c5d;
+	--sl-color-green-high: #465038;
+	--sl-color-orange-low: #ebdbbc;
+	--sl-color-orange: #f0ac54;
+	--sl-color-orange-high: #775830;
+	--sl-color-blue-low: #c5d3e0;
+	--sl-color-blue: #6a9bcc;
+	--sl-color-blue-high: #3f5870;
+	--sl-color-purple-low: #cbcadb;
+	--sl-color-purple: #827dbd;
+	--sl-color-purple-high: #4b4968;
+	--sl-color-red-low: #ebcece;
+	--sl-color-red: #de6262;
+	--sl-color-red-high: #793b3b;
+}
+
+/* Serif headings and site title; body text stays sans-serif */
+.site-title,
+.sl-markdown-content :is(h1, h2, h3, h4, h5, h6),
+h1#_top,
+.right-sidebar h2 {
+	font-family: var(--font-serif);
+	font-weight: 500;
+	letter-spacing: -0.015em;
 }
 
 /* Tip callouts use the orange accent */
