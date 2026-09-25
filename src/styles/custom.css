@@ -1,4 +1,4 @@
-/* Warm greys and cream, with a soft coral accent for links and highlights. */
+/* Warm greys and cream, with an orange accent for links and highlights. */
 
 :root {
 	--sl-color-white: #faf9f5;
@@ -10,16 +10,16 @@
 	--sl-color-gray-6: #262624;
 	--sl-color-black: #141413;
 
-	--sl-color-accent-low: #3f2a20;
-	--sl-color-accent: #d97757;
-	--sl-color-accent-high: #e9a58a;
+	--sl-color-accent-low: #432818;
+	--sl-color-accent: #e17547;
+	--sl-color-accent-high: #eb8f60;
 	--sl-color-text-invert: #141413;
 
 	--sl-color-bg-nav: #1a1918;
 	--sl-color-bg-sidebar: #1a1918;
 	--sl-color-hairline-shade: #262624;
 
-	/* Default badges are neutral so coral stays reserved for links and highlights */
+	/* Default badges are neutral so orange stays reserved for links and highlights */
 	--sl-badge-default-border: var(--sl-color-gray-4);
 	--sl-badge-default-bg: var(--sl-color-gray-6);
 	--sl-badge-default-text: var(--sl-color-white);
@@ -55,9 +55,9 @@
 	--sl-color-gray-7: #f5f4ee;
 	--sl-color-black: #faf9f5;
 
-	--sl-color-accent-low: #f5ddd2;
-	--sl-color-accent: #b0532f;
-	--sl-color-accent-high: #8f4128;
+	--sl-color-accent-low: #f8dccb;
+	--sl-color-accent: #af4e1d;
+	--sl-color-accent-high: #8c3d14;
 	--sl-color-text-invert: #faf9f5;
 
 	--sl-color-bg-nav: #f5f4ee;
@@ -69,16 +69,19 @@
 	--sl-color-orange-high: #7a5520;
 }
 
-/* Tip callouts use the coral accent */
+/* Tip callouts use the orange accent */
 .starlight-aside--tip {
 	--sl-color-asides-text-accent: var(--sl-color-accent-high);
 	--sl-color-asides-border: var(--sl-color-accent);
 	background-color: var(--sl-color-accent-low);
 }
 
-/* Square corners everywhere */
-*,
-*::before,
-*::after {
-	border-radius: 0 !important;
+/* Rounded corners: small on buttons, larger on cards */
+.sl-link-button {
+	border-radius: 0.5rem;
+}
+.sl-link-card,
+.card,
+.pagination-links a {
+	border-radius: 0.75rem;
 }
